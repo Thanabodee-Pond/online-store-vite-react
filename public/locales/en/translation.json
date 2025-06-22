@@ -1,0 +1,114 @@
+{
+    "navbar": {
+        "home": "Home",
+        "products": "Products",
+        "about_us": "About Us",
+        "login": "Login",
+        "register": "Register",
+        "my_account": "My Account",
+        "search_placeholder": "Search for products...",
+        "search_title": "Search our site",
+        "cart": "Cart",
+        "wishlist": "Wishlist"
+    },
+    "hero_slider": {
+        "slide1_subtitle": "Smart Products",
+        "slide1_title": "Winter Offer 2025 Collection",
+        "slide2_subtitle": "New Arrivals",
+        "slide2_title": "Minimalist Furniture For You",
+        "slide3_subtitle": "Flash Sale",
+        "slide3_title": "Up to 50% Off On Lamps",
+        "shop_now": "SHOP NOW"
+    },
+    "support_area": {
+        "free_shipping_title": "Free Shipping",
+        "free_shipping_desc": "Free shipping on all order",
+        "support_title": "Support 24/7",
+        "support_desc": "We are here to help anytime",
+        "money_return_title": "Money Return",
+        "money_return_desc": "30-day money back guarantee",
+        "order_discount_title": "Order Discount",
+        "order_discount_desc": "Get discounts on bulk orders"
+    },
+    "footer": {
+        "about_us": "ABOUT US",
+        "store_location": "Store location",
+        "contact": "Contact",
+        "orders_tracking": "Orders tracking",
+        "useful_links": "USEFUL LINKS",
+        "returns": "Returns",
+        "support_policy": "Support Policy",
+        "size_guide": "Size guide",
+        "faqs": "FAQs",
+        "follow_us": "FOLLOW US",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "youtube": "Youtube",
+        "subscribe": "SUBSCRIBE",
+        "subscribe_desc": "Get E-mail updates about our latest shop and special offers.",
+        "subscribe_placeholder": "Enter your email",
+        "subscribe_button": "SUBSCRIBE"
+    },
+    "products_page": {
+        "our_products": "Our Products",
+        "collection_desc": "Check out our latest collection",
+        "no_products_found": "No products found."
+    },
+    "filter_controls": {
+        "all_categories": "All",
+        "sort_by": "Sort by:",
+        "default_sort": "Default",
+        "price_asc": "Price: Low to High",
+        "price_desc": "Price: High to Low",
+        "category_chairs": "Chairs",
+        "category_tables": "Tables",
+        "category_lamps": "Lamps"
+    },
+    "product_card": {
+        "add_to_cart": "Add to cart",
+        "add_to_wishlist": "Add to wishlist",
+        "quick_view": "Quick view"
+    },
+    "cart_page": {
+        "title": "Shopping Cart",
+        "empty_cart": "Your cart is empty.",
+        "continue_shopping": "Continue Shopping",
+        "product": "Product",
+        "price": "Price",
+        "quantity": "Quantity",
+        "subtotal": "Subtotal",
+        "remove": "Remove",
+        "order_summary": "Order Summary",
+        "shipping": "Shipping",
+        "free": "Free",
+        "total": "Total",
+        "proceed_to_checkout": "Proceed to Checkout"
+  },
+  "checkout_page": {
+        "title": "Checkout",
+        "shipping_info": "Shipping Information",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "address": "Address",
+        "phone": "Phone",
+        "your_order": "Your Order",
+        "place_order": "Place Order",
+        "scan_to_pay": "Scan to Pay",
+        "scan_instruction": "Please use your mobile banking app to scan the QR Code.",
+        "amount_to_pay": "Amount:",
+        "cancel": "Cancel",
+        "confirm_payment": "Confirm Payment",
+        "payment_confirmed": "Payment confirmed! Thank you for your purchase."
+  },
+    "sidebar": {
+        "search": "Search",
+        "search_placeholder": "Search here...",
+        "categories": "Categories",
+        "color": "Color",
+        "color_placeholder": "Color filters coming soon.",
+        "size": "Size",
+        "size_placeholder": "Size filters coming soon.",
+        "tag": "Tag"
+  }
+}

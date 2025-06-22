@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Minimalist Chair",
+    "price": 120.50,
+    "image": "/images/product-1.jpg",
+    "images": [
+      "/images/product-1.jpg",
+      "/images/product-1.jpg",
+      "/images/product-1.jpg"
+    ],
+    "description": "A very comfortable and stylish chair for your modern living room. Made from high quality wood and fabric.",
+    "category": "Chairs",
+    "tag": "New"
+  },
+  {
+    "id": 2,
+    "name": "Modern Table Lamp",
+    "price": 45.00,
+    "oldPrice": 55.00,
+    "image": "/images/product-2.jpg",
+    "images": [
+      "/images/product-2.jpg",
+      "/images/product-2.jpg",
+      "/images/product-2.jpg"
+    ],
+    "description": "Brighten up your workspace with this sleek and modern table lamp. Features adjustable brightness.",
+    "category": "Lamps",
+    "tag": "Sale"
+  },
+  {
+    "id": 3,
+    "name": "Wooden Coffee Table",
+    "price": 150.00,
+    "oldPrice": 250.00,
+    "image": "/images/product-3.jpg",
+    "images": [
+      "/images/product-3.jpg",
+      "/images/product-3.jpg",
+      "/images/product-3.jpg"
+    ],
+    "description": "A centerpiece for your living area. Solid oak wood with a smooth finish.",
+    "category": "Tables",
+    "tag": "-40%"
+  },
+  {
+    "id": 4,
+    "name": "Aura Smart Lamp",
+    "price": 89.90,
+    "image": "/images/product-4.jpg",
+    "images": [
+      "/images/product-4.jpg",
+      "/images/product-4.jpg",
+      "/images/product-4.jpg"
+    ],
+    "description": "A smart lamp with a minimalist design, perfect for any bedside table. Controllable via app with multiple color modes.",
+    "category": "Lamps"
+  },
+  {
+    "id": 5,
+    "name": "Elegance Marble Lamp",
+    "price": 155.00,
+    "oldPrice": 170.00,
+    "image": "/images/product-5.jpg",
+    "images": [
+      "/images/product-5.jpg",
+      "/images/product-5.jpg",
+      "/images/product-5.jpg"
+    ],
+    "description": "Add a touch of luxury to your space with this elegant lamp, featuring a marble base and gold accents.",
+    "category": "Lamps",
+    "tag": "Sale"
+  },
+  {
+    "id": 6,
+    "name": "Nordic Dining Table",
+    "price": 320.00,
+    "image": "/images/product-6.jpg",
+    "images": [
+      "/images/product-6.jpg",
+      "/images/product-6.jpg",
+      "/images/product-6.jpg"
+    ],
+    "description": "A simple yet beautiful dining table with a Nordic design, suitable for 4-6 people. Perfect for family meals.",
+    "category": "Tables"
+  },
+  {
+    "id": 7,
+    "name": "Prestige Marble Table",
+    "price": 750.00,
+    "image": "/images/product-7.jpg",
+    "images": [
+      "/images/product-7.jpg",
+      "/images/product-7.jpg",
+      "/images/product-7.jpg"
+    ],
+    "description": "Make a statement with this prestige dining table, featuring a stunning marble top and a unique metallic base.",
+    "category": "Tables",
+    "tag": "New"
+  },
+  {
+    "id": 8,
+    "name": "ComfortMax Recliner",
+    "price": 480.00,
+    "image": "/images/product-8.jpg",
+    "images": [
+      "/images/product-8.jpg",
+      "/images/product-8.jpg",
+      "/images/product-8.jpg"
+    ],
+    "description": "The ultimate relaxation chair. This recliner offers maximum comfort with its plush cushioning and easy-to-use reclining mechanism.",
+    "category": "Chairs"
+  },
+  {
+    "id": 9,
+    "name": "Velvet Accent Chair",
+    "price": 210.00,
+    "image": "/images/product-9.jpg",
+    "images": [
+      "/images/product-9.jpg",
+      "/images/product-9.jpg",
+      "/images/product-9.jpg"
+    ],
+    "description": "A stylish accent chair upholstered in rich green velvet. Adds a pop of color and sophistication to any room.",
+    "category": "Chairs",
+    "tag": "New"
+  }
+]

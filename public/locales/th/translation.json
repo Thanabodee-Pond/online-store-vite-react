@@ -1,0 +1,115 @@
+{
+    "navbar": {
+        "home": "หน้าแรก",
+        "products": "สินค้า",
+        "about_us": "เกี่ยวกับเรา",
+        "login": "เข้าสู่ระบบ",
+        "register": "สมัครสมาชิก",
+        "my_account": "บัญชีของฉัน",
+        "search_placeholder": "ค้นหาสินค้า...",
+        "search_title": "ค้นหาในเว็บไซต์ของเรา",
+        "cart": "ตะกร้า",
+        "wishlist": "สิ่งที่อยากได้"
+    },
+    "hero_slider": {
+        "slide1_subtitle": "ชีวิตสมาร์ท",
+        "slide1_title": "ดื่มด่ำลมหนาวอย่างมีสไตล์... เหนือกว่าทุกนิยาม.",
+        "slide2_subtitle": "สินค้ามาใหม่",
+        "slide2_title": "เฟอร์นิเจอร์มินิมอลเพื่อคุณ",
+        "slide3_subtitle": "ลดราคาพิเศษ",
+        "slide3_title": "โคมไฟลดสูงสุด 50%",
+        "shop_now": "เลือกซื้อเลย"
+    },
+    "support_area": {
+        "free_shipping_title": "จัดส่งฟรี",
+        "free_shipping_desc": "จัดส่งฟรีสำหรับทุกคำสั่งซื้อ",
+        "support_title": "ช่วยเหลือ 24/7",
+        "support_desc": "พร้อมช่วยเหลือทุกเวลา",
+        "money_return_title": "รับประกันคืนเงิน",
+        "money_return_desc": "รับประกันคืนเงินภายใน 30 วัน",
+        "order_discount_title": "ส่วนลดพิเศษ",
+        "order_discount_desc": "รับส่วนลดเมื่อสั่งซื้อจำนวนมาก"
+    },
+    "footer": {
+        "about_us": "เกี่ยวกับเรา",
+        "store_location": "ที่ตั้งร้านค้า",
+        "contact": "ติดต่อเรา",
+        "orders_tracking": "ติดตามคำสั่งซื้อ",
+        "useful_links": "ลิงก์ที่เป็นประโยชน์",
+        "returns": "การคืนสินค้า",
+        "support_policy": "นโยบายช่วยเหลือ",
+        "size_guide": "คู่มือขนาด",
+        "faqs": "คำถามที่พบบ่อย",
+        "follow_us": "ติดตามเรา",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "youtube": "Youtube",
+        "subscribe": "ติดตามข่าวสาร",
+        "subscribe_desc": "รับข่าวสารอัปเดตเกี่ยวกับร้านค้าและโปรโมชั่นพิเศษทางอีเมล",
+        "subscribe_placeholder": "กรอกอีเมลของคุณ",
+        "subscribe_button": "ติดตาม"
+    },
+    "products_page": {
+        "our_products": "สินค้าของเรา",
+        "collection_desc": "เลือกชมคอลเลคชั่นล่าสุดของเรา",
+        "no_products_found": "ไม่พบสินค้าที่ตรงกัน"
+    },
+    "filter_controls": {
+        "all_categories": "ทั้งหมด",
+        "sort_by": "เรียงตาม:",
+        "default_sort": "ค่าเริ่มต้น",
+        "price_asc": "ราคา: น้อยไปมาก",
+        "price_desc": "ราคา: มากไปน้อย",
+        "category_chairs": "เก้าอี้",
+        "category_tables": "โต๊ะ",
+        "category_lamps": "โคมไฟ"
+    },
+    "product_card": {
+        "add_to_cart": "เพิ่มลงตะกร้า",
+        "add_to_wishlist": "เพิ่มในสิ่งที่อยากได้",
+        "quick_view": "ดูด่วน"
+    },
+    "cart_page": {
+        "title": "ตะกร้าสินค้า",
+        "empty_cart": "ตะกร้าสินค้าของคุณว่างเปล่า",
+        "continue_shopping": "เลือกซื้อสินค้าต่อ",
+        "product": "สินค้า",
+        "price": "ราคา",
+        "quantity": "จำนวน",
+        "subtotal": "ราคารวมสินค้า",
+        "remove": "ลบ",
+        "order_summary": "สรุปรายการสั่งซื้อ",
+        "shipping": "ค่าจัดส่ง",
+        "free": "ฟรี",
+        "total": "ยอดรวม",
+        "proceed_to_checkout": "ไปที่หน้าชำระเงิน"
+  },
+
+  "checkout_page": {
+        "title": "ชำระเงิน",
+        "shipping_info": "ข้อมูลการจัดส่ง",
+        "first_name": "ชื่อจริง",
+        "last_name": "นามสกุล",
+        "address": "ที่อยู่",
+        "phone": "เบอร์โทรศัพท์",
+        "your_order": "รายการสั่งซื้อของคุณ",
+        "place_order": "ยืนยันคำสั่งซื้อ",
+        "scan_to_pay": "สแกนเพื่อชำระเงิน",
+        "scan_instruction": "กรุณาใช้แอปพลิเคชันธนาคารบนมือถือของคุณเพื่อสแกน QR Code",
+        "amount_to_pay": "ยอดชำระ:",
+        "cancel": "ยกเลิก",
+        "confirm_payment": "ยืนยันการชำระเงิน",
+        "payment_confirmed": "ยืนยันการชำระเงินเรียบร้อย! ขอบคุณสำหรับคำสั่งซื้อครับ"
+  },
+    "sidebar": {
+        "search": "ค้นหา",
+        "search_placeholder": "ค้นหาที่นี่...",
+        "categories": "หมวดหมู่",
+        "color": "สี",
+        "color_placeholder": "ตัวกรองสีกำลังจะมาเร็วๆ นี้",
+        "size": "ขนาด",
+        "size_placeholder": "ตัวกรองขนาดกำลังจะมาเร็วๆ นี้",
+        "tag": "แท็ก"
+  }
+}
