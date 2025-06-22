@@ -70,3 +70,47 @@ A curated selection of modern, industry-standard technologies was chosen for thi
 ## 📂 Project Structure
 
 The project follows a scalable and organized structure, making it easy to understand and maintain.
+
+```bash
+/src
+|-- /components     # Reusable components, organized by type (common, layout, product)
+|-- /context        # Centralized state management logic (Cart, Wishlist, Filter, QuickView)
+|-- /hooks          # Custom hooks for abstracting logic (e.g., useProducts)
+|-- /pages          # Page components for each route
+|-- /types          # TypeScript interfaces and types
+|-- App.tsx         # Main application routing hub
+|-- main.tsx        # The entry point of the application, where all providers are wrapped
+|-- i18n.ts         # Configuration file for the internationalization system
+```
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    ```
+    *(Remember to replace `https://github.com/your-username/your-repository-name.git` with your actual repository URL, e.g., `https://github.com/Thanabodee-Pond/online-store-vite-react.git`)*
+2.  **Navigate to the project directory:**
+    ```bash
+    cd your-repository-name
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+5.  Open your browser and navigate to `http://localhost:5173`
+
+## 🔮 Future Improvements & Scalability
+
+This architecture provides a solid foundation for future development. Potential next steps include:
+
+* **Backend Integration:** Replace the mock JSON data fetching in `useProducts` with calls to a real backend API (e.g., REST or GraphQL). The component-level implementation would remain unchanged due to the abstraction provided by the hook.
+* **Authentication:** Implement a full authentication flow (Login, Register, JWT handling) and protect routes like "My Account".
+* **Testing:** Introduce a testing suite with Vitest/Jest and React Testing Library to write unit and integration tests for components, hooks, and context reducers.
+* **Performance Optimization:** Implement code-splitting at the route level using `React.lazy` and `<Suspense>` to improve initial load times as the application grows.
