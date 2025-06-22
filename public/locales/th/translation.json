@@ -111,5 +111,11 @@
         "size": "ขนาด",
         "size_placeholder": "ตัวกรองขนาดกำลังจะมาเร็วๆ นี้",
         "tag": "แท็ก"
+  },
+  "toast": {
+        "item_added_to_cart": "{{name}} จำนวน {{quantity}} ชิ้น ถูกเพิ่มลงตะกร้าแล้ว",
+        "payment_confirmed": "ยืนยันการชำระเงินเรียบร้อย!",
+        "thank_you_purchase": "ขอบคุณสำหรับคำสั่งซื้อครับ",
+        "feature_not_implemented": "ฟังก์ชันนี้ยังไม่เปิดใช้งาน"
   }
 }

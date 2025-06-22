@@ -110,5 +110,11 @@
         "size": "Size",
         "size_placeholder": "Size filters coming soon.",
         "tag": "Tag"
-  }
+  },
+    "toast": {
+        "item_added_to_cart": "{{name}} has been added to your cart.",
+        "payment_confirmed": "Payment Confirmed!",
+        "thank_you_purchase": "Thank you for your purchase.",
+        "feature_not_implemented": "This feature is not implemented yet."
+    }
 }

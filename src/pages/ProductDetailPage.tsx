@@ -5,8 +5,11 @@ import { useState, useEffect } from 'react';
 import { useWishlist } from '../context/WishlistContext';
 import { FiHeart } from 'react-icons/fi';
 import Accordion from '../components/common/Accordion';
+import { useTranslation } from 'react-i18next';
+import { toast } from 'sonner'; 
 
 const ProductDetailPage = () => {
+    const { t } = useTranslation();
     const { productId } = useParams<{ productId: string }>();
     const { products, isLoading, error } = useProducts();
     const { addItem } = useCart();
@@ -35,7 +38,10 @@ const ProductDetailPage = () => {
 
     const handleAddToCart = () => {
         addItem(product, quantity);
-        alert(`${quantity} ${product.name}(s) added to cart!`);
+        toast.success(t('toast.item_added_to_cart', {
+            name: product.name,
+            quantity: quantity
+        }));
     };
     
     const galleryImages = [product.image, ...(product.images || [])];

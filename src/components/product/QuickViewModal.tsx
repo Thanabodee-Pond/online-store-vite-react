@@ -4,6 +4,8 @@ import { useCart } from '../../context/CartContext';
 import { useWishlist } from '../../context/WishlistContext';
 import { FiX, FiHeart } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { toast } from 'sonner';
+import { useTranslation } from 'react-i18next';
 
 const QuickViewModal = () => {
   const { isOpen, product, closeModal } = useQuickView();
@@ -23,7 +25,10 @@ const QuickViewModal = () => {
 
   const handleAddToCart = () => {
     addItem(product, quantity);
-    alert(`${quantity} ${product.name}(s) added to cart!`);
+    toast.success(t('toast.item_added_to_cart', { 
+      name: product.name, 
+      quantity: quantity 
+    }));
     closeModal();
   };
   

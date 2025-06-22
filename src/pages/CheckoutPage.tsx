@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import generatePayload from 'promptpay-qr';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'sonner';
 
 type ShippingInputs = {
   firstName: string;
@@ -41,7 +42,9 @@ const CheckoutPage = () => {
   };
 
   const handleConfirmPayment = () => {
-    alert(t('checkout_page.payment_confirmed'));
+    toast.success(t('toast.payment_confirmed'), {
+      description: t('toast.thank_you_purchase'),
+    });
     clearCart();
     setIsModalOpen(false);
     navigate('/');
