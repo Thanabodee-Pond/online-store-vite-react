@@ -1,5 +1,3 @@
-// src/components/product/ShopTopBar.tsx
-
 import { useFilters } from '../../context/FilterContext';
 
 const ShopTopBar = () => {

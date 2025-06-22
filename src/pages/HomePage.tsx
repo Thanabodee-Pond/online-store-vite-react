@@ -1,5 +1,3 @@
-// src/pages/HomePage.tsx
-
 import ProductCard from '../components/product/ProductCard';
 import { useProducts } from '../hooks/useProducts';
 import { useFilters } from '../context/FilterContext';
@@ -14,7 +12,6 @@ const HomePage = () => {
     const { searchTerm, category, sortBy } = useFilters();
 
     const processedProducts = products
-        // ... (ส่วน logic เหมือนเดิม) ...
         .sort((a, b) => {
             if (sortBy === 'price-asc') return a.price - b.price;
             if (sortBy === 'price-desc') return b.price - a.price;
@@ -28,7 +25,6 @@ const HomePage = () => {
         <>
             <HeroSlider />
             <SupportArea />
-            {/* --- แก้ไขส่วนนี้ --- */}
             <div className="container px-4 py-24 mx-auto ">
                 <div className="mb-12 text-center">
                     <h2 className="text-4xl font-bold text-dark">{t('products_page.our_products')}</h2>

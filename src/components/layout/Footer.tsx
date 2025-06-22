@@ -1,11 +1,9 @@
-// src/components/layout/Footer.tsx
-
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next'; // 1. Import hook
+import { useTranslation } from 'react-i18next'; 
 import { FiFacebook, FiTwitter, FiInstagram, FiYoutube } from 'react-icons/fi';
 
 const Footer = () => {
-    const { t } = useTranslation(); // 2. เรียกใช้ hook
+    const { t } = useTranslation(); 
 
     return (
         <footer className="pt-24 pb-16 text-gray-600 bg-gray-100">

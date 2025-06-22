@@ -1,5 +1,3 @@
-// src/components/common/Accordion.tsx
-
 import { useState, ReactNode } from 'react';
 import { FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';

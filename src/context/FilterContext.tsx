@@ -1,8 +1,5 @@
-// src/context/FilterContext.tsx
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
-// กำหนด Type ของ Context
 interface FilterContextType {
   searchTerm: string;
   setSearchTerm: (term: string) => void;

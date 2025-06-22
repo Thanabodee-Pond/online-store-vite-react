@@ -1,10 +1,7 @@
-// src/components/common/SupportArea.tsx
-
 import { FiTruck, FiHeadphones, FiDollarSign, FiGift } from 'react-icons/fi';
 import React from 'react';
 import { useTranslation } from 'react-i18next'; 
 
-// สร้าง Interface สำหรับข้อมูลแต่ละรายการ
 interface SupportItemProps {
     icon: React.ReactNode;
     title: string;

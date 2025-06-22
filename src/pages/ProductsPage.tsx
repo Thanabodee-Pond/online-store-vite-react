@@ -1,5 +1,3 @@
-// src/pages/ProductsPage.tsx
-
 import ProductCard from '../components/product/ProductCard';
 import Sidebar from '../components/product/Sidebar';
 import ShopTopBar from '../components/product/ShopTopBar';

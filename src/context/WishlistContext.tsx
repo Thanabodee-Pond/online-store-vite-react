@@ -1,4 +1,3 @@
-// src/context/WishlistContext.tsx
 import React, { createContext, useReducer, useEffect, useContext, ReactNode } from 'react';
 import { Product } from '../types';
 
@@ -14,10 +13,8 @@ const wishlistReducer = (state: WishlistState, action: WishlistAction): Wishlist
     case 'TOGGLE_WISHLIST': {
       const existingItem = state.items.find(item => item.id === action.payload.id);
       if (existingItem) {
-        // ถ้ามีอยู่แล้ว ให้ลบออก
         return { ...state, items: state.items.filter(item => item.id !== action.payload.id) };
       } else {
-        // ถ้าไม่มี ให้เพิ่มเข้าไป
         return { ...state, items: [...state.items, action.payload] };
       }
     }
@@ -35,7 +32,7 @@ interface WishlistContextType {
 const WishlistContext = createContext<WishlistContextType | undefined>(undefined);
 
 export const WishlistProvider = ({ children }: { children: ReactNode }) => {
-  const initialState: WishlistState = { items: [] }; // Wishlist ไม่ต้องเซฟลง localStorage ก็ได้
+  const initialState: WishlistState = { items: [] }; 
   const [state, dispatch] = useReducer(wishlistReducer, initialState);
 
   const toggleWishlist = (product: Product) => {

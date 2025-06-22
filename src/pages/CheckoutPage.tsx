@@ -1,5 +1,3 @@
-// src/pages/CheckoutPage.tsx
-
 import { useCart } from '../context/CartContext';
 import { useForm, type SubmitHandler } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
@@ -8,31 +6,25 @@ import { QRCodeSVG } from 'qrcode.react';
 import generatePayload from 'promptpay-qr';
 import { useTranslation } from 'react-i18next';
 
-// กำหนด Type ของข้อมูลในฟอร์ม
 type ShippingInputs = {
   firstName: string;
   lastName: string;
   address: string;
-  city: string; // เพิ่ม city field ตาม type
+  city: string; 
   phone: string;
 };
 
 const CheckoutPage = () => {
-  // 1. เรียกใช้ Hooks ทั้งหมดที่ด้านบนสุดของ Component
   const { t } = useTranslation();
   const { items, clearCart } = useCart();
   const { register, handleSubmit, formState: { errors } } = useForm<ShippingInputs>();
   const navigate = useNavigate();
-
-  // State สำหรับควบคุม Modal และเก็บข้อมูล
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [qrCodeData, setQrCodeData] = useState('');
   const [currentOrder, setCurrentOrder] = useState<{ details: ShippingInputs, subtotal: number } | null>(null);
 
-  // คำนวณค่าต่างๆ ที่ต้องใช้
   const subtotal = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-  // สร้างฟังก์ชัน handler ที่จะใช้กับฟอร์ม
   const onSubmit: SubmitHandler<ShippingInputs> = data => {
     if (items.length === 0) {
       alert("Your cart is empty!");
@@ -48,7 +40,6 @@ const CheckoutPage = () => {
     setIsModalOpen(true);
   };
 
-  // สร้างฟังก์ชันสำหรับยืนยันการชำระเงิน
   const handleConfirmPayment = () => {
     alert(t('checkout_page.payment_confirmed'));
     clearCart();
@@ -56,7 +47,6 @@ const CheckoutPage = () => {
     navigate('/');
   };
 
-  // ส่วนของการแสดงผล JSX
   return (
     <>
       <div className="container px-4 py-24 mx-auto">
@@ -71,7 +61,6 @@ const CheckoutPage = () => {
           </div>
         ) : (
           <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-16 lg:grid-cols-2">
-            {/* Shipping Information */}
             <div>
               <h2 className="pb-4 mb-6 text-2xl font-semibold border-b">{t('checkout_page.shipping_info')}</h2>
               <div className="space-y-6">
@@ -100,7 +89,6 @@ const CheckoutPage = () => {
               </div>
             </div>
 
-            {/* Order Summary */}
             <div className="p-8 border border-gray-200 rounded-lg h-fit">
               <h2 className="pb-4 mb-6 text-2xl font-bold border-b">{t('checkout_page.your_order')}</h2>
               <div className="space-y-4">
@@ -131,7 +119,6 @@ const CheckoutPage = () => {
         )}
       </div>
 
-      {/* Modal ที่แปลภาษาแล้ว */}
       {isModalOpen && currentOrder && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="w-full max-w-sm p-8 text-center bg-white rounded-lg shadow-2xl">

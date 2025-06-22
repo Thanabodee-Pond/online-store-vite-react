@@ -15,13 +15,11 @@ export const QuickViewProvider = ({ children }: { children: ReactNode }) => {
   const [product, setProduct] = useState<Product | null>(null);
 
   const openModal = (productToView: Product) => {
-    console.log("Opening Quick View for:", productToView.name);
     setProduct(productToView);
     setIsOpen(true);
   };
 
   const closeModal = () => {
-    console.log("Closing Quick View"); 
     setIsOpen(false);
     setProduct(null);
   };

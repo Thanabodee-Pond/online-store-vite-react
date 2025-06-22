@@ -1,5 +1,3 @@
-// src/components/common/HeroSlider.tsx
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -104,11 +102,9 @@ const HeroSlider = () => {
                             </motion.div>
                         </div>
                         
-                        {/* Image Content */}
                         <motion.div 
                           key={`${currentSlide.id}-image`}
                           initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2 }}
-                          // ปรับขนาดและความสูงสำหรับมือถือ
                           className="flex items-center justify-center w-full pt-12 h-1/2 md:h-full md:items-end md:pt-0"
                         >
                             <img 

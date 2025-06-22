@@ -1,5 +1,3 @@
-// src/components/product/Sidebar.tsx
-
 import { useFilters } from '../../context/FilterContext';
 import { useTranslation } from 'react-i18next';
 import { FiSearch } from 'react-icons/fi';
@@ -19,7 +17,6 @@ const Sidebar = () => {
 
   return (
     <div className="space-y-10">
-      {/* Search Widget */}
       <div className="p-6 border border-gray-200 rounded-lg">
         <h4 className="mb-5 text-xl font-semibold">{t('sidebar.search')}</h4>
         <form className="relative">
@@ -35,8 +32,6 @@ const Sidebar = () => {
           </button>
         </form>
       </div>
-
-      {/* Categories Widget */}
       <div className="p-6 border border-gray-200 rounded-lg">
         <h4 className="mb-5 text-xl font-semibold">{t('sidebar.categories')}</h4>
         <ul className="space-y-3">

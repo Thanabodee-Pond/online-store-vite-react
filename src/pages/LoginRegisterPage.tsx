@@ -1,5 +1,3 @@
-// src/pages/LoginRegisterPage.tsx
-
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -9,19 +7,16 @@ const LoginRegisterPage = () => {
     const { register: registerRegister, handleSubmit: handleRegisterSubmit } = useForm();
 
     const onLogin = (data: any) => {
-        console.log("Login data:", data);
         alert("Login functionality is not implemented yet.");
     };
 
     const onRegister = (data: any) => {
-        console.log("Register data:", data);
         alert("Registration functionality is not implemented yet.");
     };
 
     return (
         <div className="container px-4 py-24 mx-auto">
             <div className="max-w-md mx-auto">
-                {/* Tab Navigation */}
                 <div className="flex mb-10 border-b">
                     <button
                         onClick={() => setActiveTab('login')}
@@ -41,9 +36,7 @@ const LoginRegisterPage = () => {
                     </button>
                 </div>
 
-                {/* Tab Content */}
                 <div>
-                    {/* Login Form */}
                     <div className={activeTab === 'login' ? 'block' : 'hidden'}>
                         <form onSubmit={handleLoginSubmit(onLogin)} className="space-y-8">
                             <input
@@ -71,7 +64,6 @@ const LoginRegisterPage = () => {
                         </form>
                     </div>
 
-                    {/* Register Form */}
                     <div className={activeTab === 'register' ? 'block' : 'hidden'}>
                         <form onSubmit={handleRegisterSubmit(onRegister)} className="space-y-8">
                             <input

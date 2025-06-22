@@ -1,21 +1,16 @@
-// src/context/CartContext.tsx
-
 import React, { createContext, useReducer, useEffect, useContext, ReactNode } from 'react';
 import { Product, CartItem } from '../types';
 
-// 1. กำหนด Action Types ทั้งหมดที่ต้องการ
 type CartAction =
   | { type: 'ADD_ITEM'; payload: { product: Product; quantity: number } }
   | { type: 'REMOVE_ITEM'; payload: { id: number } }
   | { type: 'UPDATE_QUANTITY'; payload: { id: number; quantity: number } }
   | { type: 'CLEAR_CART' };
 
-// 2. กำหนดรูปร่างของ State
 interface CartState {
   items: CartItem[];
 }
 
-// 3. สร้าง Reducer ที่จัดการ Logic ทั้งหมด
 const cartReducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
     case 'ADD_ITEM': {
@@ -27,7 +22,6 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
       let updatedItems;
 
       if (existingItem) {
-        // ถ้ามีของอยู่แล้ว -> เพิ่มจำนวนตาม quantity ที่ได้รับมา
         const updatedItem = {
           ...existingItem,
           quantity: existingItem.quantity + quantity,
@@ -35,7 +29,6 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
         updatedItems = [...state.items];
         updatedItems[existingItemIndex] = updatedItem;
       } else {
-        // ถ้าเป็นของใหม่ -> เพิ่มเข้าไปในตะกร้าพร้อม quantity
         updatedItems = state.items.concat({ ...product, quantity: quantity });
       }
       return { ...state, items: updatedItems };
@@ -49,7 +42,6 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
     }
 
     case 'UPDATE_QUANTITY': {
-      // ถ้าจำนวนน้อยกว่าหรือเท่ากับ 0 ให้ลบออกไปเลย
       if (action.payload.quantity <= 0) {
         const updatedItems = state.items.filter(
           (item) => item.id !== action.payload.id
@@ -73,7 +65,6 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
   }
 };
 
-// 4. กำหนด Type ของ Context ที่จะส่งออกไป
 interface CartContextType {
   items: CartItem[];
   addItem: (product: Product, quantity?: number) => void;
@@ -84,7 +75,6 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// 5. สร้าง Provider Component ที่สมบูรณ์
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const initialState: CartState = (() => {
     try {
@@ -137,7 +127,6 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-// 6. สร้าง Custom Hook เพื่อให้เรียกใช้ Context ได้ง่าย
 export const useCart = (): CartContextType => {
   const context = useContext(CartContext);
   if (context === undefined) {

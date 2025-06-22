@@ -1,14 +1,11 @@
-// src/hooks/useProducts.ts
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Product } from '../types';
 
-// กำหนด Type สำหรับข้อมูลที่แปลเท่านั้น
 type ProductTranslation = {
   id: number;
   name: string;
   description: string;
-  // เราไม่จำเป็นต้องแปล category อีกต่อไป
 };
 
 interface UseProductsReturn {
@@ -48,9 +45,6 @@ export const useProducts = (): UseProductsReturn => {
         }
         const translatedData: ProductTranslation[] = await translatedDataResponse.json();
         
-        // --- ส่วนที่แก้ไข ---
-        // เราจะนำข้อมูลแปลมาทับแค่ name และ description
-        // แต่จะยังคงใช้ category จาก baseData (ภาษาอังกฤษ) เสมอ
         const mergedProducts = baseData.map(baseProduct => {
           const translation = translatedData.find(t => t.id === baseProduct.id);
           return translation 

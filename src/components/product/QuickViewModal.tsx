@@ -1,5 +1,3 @@
-// src/components/product/QuickViewModal.tsx
-
 import { useState, useEffect } from 'react';
 import { useQuickView } from '../../context/QuickViewContext';
 import { useCart } from '../../context/CartContext';
@@ -14,7 +12,6 @@ const QuickViewModal = () => {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    // รีเซ็ตจำนวนเป็น 1 ทุกครั้งที่ Modal เปิดสำหรับสินค้าใหม่
     if (isOpen) {
         setQuantity(1);
     }

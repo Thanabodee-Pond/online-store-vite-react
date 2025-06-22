@@ -1,5 +1,3 @@
-// src/pages/MyAccountPage.tsx
-
 import { useState } from 'react';
 
 const MyAccountPage = () => {
@@ -74,7 +72,6 @@ const MyAccountPage = () => {
         <div className="container px-4 py-20 mx-auto">
              <h1 className="mb-12 text-4xl font-bold text-center">My Account</h1>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-                {/* Sidebar Navigation */}
                 <div className="md:col-span-1">
                     <ul className="space-y-2">
                         <li><button onClick={() => setActiveView('dashboard')} className={`w-full text-left p-3 rounded-md transition-colors ${activeView === 'dashboard' ? 'bg-primary text-white' : 'hover:bg-gray-100'}`}>Dashboard</button></li>
@@ -84,7 +81,6 @@ const MyAccountPage = () => {
                     </ul>
                 </div>
 
-                {/* Content */}
                 <div className="md:col-span-3">
                     {renderContent()}
                 </div>

@@ -1,4 +1,3 @@
-// src/components/layout/Layout.tsx
 import Navbar from './Navbar';
 import Footer from './Footer';
 import QuickViewModal from '../product/QuickViewModal'; 
@@ -14,8 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="flex-grow">
         {children}
       </main>
-      <Footer /> {/* เรียกใช้ Footer */}
-      <QuickViewModal />
+      <Footer />       <QuickViewModal />
     </div>
   );
 };
