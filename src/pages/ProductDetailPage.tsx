@@ -58,7 +58,7 @@ const ProductDetailPage = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="flex items-center justify-center flex-grow bg-gray-100 rounded-lg">
+                    <div className="flex items-center justify-center flex-grow bg-white rounded-lg">
                         <img src={selectedImage || product.image} alt={product.name} className="w-full max-h-[100vh] object-contain"/>
                     </div>
                 </div>
